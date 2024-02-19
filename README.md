@@ -22,6 +22,3 @@ To run this project locally, you need to have Node.js and npm installed on your 
 - Start the development server: `npm start`
 - Open http://localhost:3000 in your browser
 
-<br><br>
-I hope this example helps you write a good README for your GitHub project. If you have any questions or feedback, please let me know. 😊
-
