@@ -19,7 +19,7 @@ const Card = (props) => {
         else {
             //pehle se liked nhi hai
             //insert karna hai liked courses mein
-            if (likedCourses == 0) {
+            if (likedCourses === 0) {
                 setLickedCourses([course.id]);
             }
             else {
@@ -35,7 +35,8 @@ const Card = (props) => {
             <div className='relative'>
                 <img src={course.image.url}></img>
 
-                <div className='w-[40px] h-[40px] bg-white rounded-full absolute right-2 bottom-[-12px] grid place-items-center'>
+                <div className='w-[40px] h-[40px] bg-white rounded-full absolute right-2 bottom-[-12px]
+                 grid place-items-center'>
                     <buttton onClick={clickHandler} >
                         {
                             likedCourses.includes(course.id) ?

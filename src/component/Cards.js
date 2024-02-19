@@ -10,7 +10,7 @@ const Cards = (props) => {
 
     //it return you a list of all courses from api response
     function getCourses() {
-        if (category == "All") {
+        if (category === "All") {
             let allCourses = [];
             Object.values(courses).forEach(courseCategory => {
                 courseCategory.forEach(courseData => {
@@ -29,7 +29,8 @@ const Cards = (props) => {
         <div className="flex flex-wrap justify-center gap-4 mb-4">
             {
                 getCourses().map((course) => {
-                    return <Card key={course.id} course={course} likedCourses={likedCourses} setLickedCourses={setLickedCourses} />
+                    return <Card key={course.id} course={course} 
+                    likedCourses={likedCourses} setLickedCourses={setLickedCourses} />
                 })
 
             }
